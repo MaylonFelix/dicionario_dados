@@ -7,11 +7,11 @@
 <title>Cadastra Entidade</title>
 </head>
 <body>
-	<h1>Resultado Cadastra Entidade<h1 />
-		<h6>Entidade ${entidade.nome} cadastrada com sucesso!</h6> 
-		<h6>${entidade.descricao}<h6/><br />
-		<br />
-		<br />  
-   			${msg }  
+	<h1>
+		Resultado Cadastra Entidade
+		<h1 />
+		<p>Entidade ${entidade.nome} cadastrada com sucesso!</p>
+		<p>${entidade.descricao}</p>
+		<br /> <br /> <br />
 </body>
 </html>
