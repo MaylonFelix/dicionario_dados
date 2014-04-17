@@ -22,7 +22,7 @@
 				<br /> 
 				<input type="submit" value="Salvar" id="salvar" /> 
 			</form><br/>
-			<button onclick="window.location.href='ListaEntidades'">Lista Entidades</button>
+			<button onclick="window.location.href='mvc?logica=ListaEntidadeLogica'">Lista Entidades</button>
 			<br /> 
 			<br /> 
 			

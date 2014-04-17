@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.pix.model.Entidade;
 import br.com.pix.persistence.EntidadeDAO;
 
-public class CadastraEntidade implements Logica {
+public class CadastraEntidadeLogica implements Logica {
 
 	@Override
 	public String executa(HttpServletRequest request,

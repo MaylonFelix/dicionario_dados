@@ -1,10 +1,18 @@
 package br.com.pix.model;
 
 public class Entidade {
-
+	private int id;
 	private String nome;
 	private String descricao;
 
+	public void setId(int id){
+		this.id = id;
+		
+	}
+	public int getId(){
+		return id;
+	}
+	
 	public String getNome() {
 		return nome;
 	}

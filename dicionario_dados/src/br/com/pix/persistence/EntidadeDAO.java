@@ -46,10 +46,11 @@ public class EntidadeDAO {
 			while (rs.next()) {
 				// criando o objeto Entidade
 				Entidade entidade = new Entidade();
+				entidade.setId(rs.getInt(1));
 				entidade.setNome(rs.getString("nome"));
 				entidade.setDescricao(rs.getString("descricao"));
 
-				// adicionando o objeto à lista
+				// adicionando o objeto ï¿½ lista
 				entidades.add(entidade);
 			}
 			rs.close();
@@ -57,6 +58,24 @@ public class EntidadeDAO {
 			return entidades;
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
+		}
+	}
+
+	public void exclui(Entidade entidade) {
+		String sql = "delete from entidade where id = (?)";
+		try {
+			PreparedStatement stmt = this.connection.prepareStatement(sql);
+			stmt.setInt(1, entidade.getId());
+			stmt.execute();
+			stmt.close();
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		} finally {
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				throw new RuntimeException(e);
+			}
 		}
 	}
 }

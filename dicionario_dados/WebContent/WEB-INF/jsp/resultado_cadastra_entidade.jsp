@@ -7,11 +7,10 @@
 <title>Cadastra Entidade</title>
 </head>
 <body>
-	<h1>
-		Resultado Cadastra Entidade
-		<h1 />
+	<h1>Resultado Cadastra Entidade</h1>
 		<p>Entidade ${entidade.nome} cadastrada com sucesso!</p>
-		<p>${entidade.descricao}</p>
 		<br /> <br /> <br />
+		
+			<button onclick="window.location.href='mvc?logica=ListaEntidadeLogica'">Lista Entidades</button>
 </body>
 </html>
